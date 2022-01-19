@@ -2,4 +2,4 @@
 
 ## I studied with the help of this YouTuber.
 
-I studied with the help of this YouTuber.[YouTube Link](https://youtu.be/KpA6oEaCHtk?list=PLC3y8-rFHvwi1AXijGTKM0BKtHzVC-LSK).
+I studied with the help of this [YouTuber](https://youtu.be/KpA6oEaCHtk?list=PLC3y8-rFHvwi1AXijGTKM0BKtHzVC-LSK).
