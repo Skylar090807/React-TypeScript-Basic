@@ -2,6 +2,7 @@ import React from 'react'
 import './App.css'
 import { Award } from './components/award'
 import { Button } from './components/button'
+import { Container } from './components/container'
 import { Greet } from './components/greet'
 import { Heading } from './components/heading'
 import { Input } from './components/input'
@@ -46,6 +47,7 @@ function App() {
       />
       <Input value="" handleChange={console.log} />
       {/* handleChange={(event) => console.log(event)} 같은 인자를 전달하고 받을 땐 생략 가능 */}
+      <Container />
     </div>
   )
 }
