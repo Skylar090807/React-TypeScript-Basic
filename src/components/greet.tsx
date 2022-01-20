@@ -1,17 +1,18 @@
 import * as React from 'react'
 type GreetProps = {
   name: string
-  number: number
+  number?: number
   loggedIn: boolean
 }
 
 export const Greet = (props: GreetProps) => {
+  const { number = 0 } = props
   return (
     <div>
       <h1>{props.loggedIn ? `welcome ${props.name}! 🥰` : `Welcome Guest! 🤩`}</h1>
       <h2>Greeting!</h2>
       <h3>Welcome! I'm {props.name}. This Web Page for React-Typescript Study.</h3>
-      <h4>I've been studying React for {props.number} month.</h4>
+      <h4>I've been studying React for a {props.number} month.</h4>
       <p> I want to be like these developers. 👇🏻</p>
     </div>
   )
