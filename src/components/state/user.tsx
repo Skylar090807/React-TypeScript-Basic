@@ -9,7 +9,7 @@ export const User = () => {
   /*(alias) useState<null>(initialState: (() => null) | null): 
     [null, React.Dispatch<React.SetStateAction<null>>] (+1 overload)
   */
-  const [user, setUser] = useState<AuthUser | null>(null)
+  const [user, setUser] = useState<AuthUser | null>(null) /* <-useState future value */
   const handleLogin = () => {
     setUser({
       name: 'Skylar',
