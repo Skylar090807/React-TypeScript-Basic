@@ -2,6 +2,7 @@ import React from 'react'
 import './App.css'
 import { Award } from './components/award'
 import { Button } from './components/button'
+import { Counter2 } from './components/class/counter'
 import { Container } from './components/container'
 import { Box } from './components/context/box'
 import { ThemeContextProvider } from './components/context/themecontext'
@@ -12,6 +13,8 @@ import { Heading } from './components/heading'
 import { Input } from './components/input'
 import { Person } from './components/person'
 import { PersonList } from './components/personlist'
+import { DomRef } from './components/ref/domref'
+import { MutableRef } from './components/ref/mutableref'
 import { Counter } from './components/state/counter'
 import { Status } from './components/status'
 
@@ -60,6 +63,9 @@ function App() {
       <UserContextProvider>
         <User />
       </UserContextProvider>
+      <DomRef />
+      <MutableRef />
+      <Counter2 message="The count value is" />
     </div>
   )
 }
