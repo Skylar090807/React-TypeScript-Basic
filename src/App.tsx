@@ -5,6 +5,8 @@ import { Button } from './components/button'
 import { Container } from './components/container'
 import { Box } from './components/context/box'
 import { ThemeContextProvider } from './components/context/themecontext'
+import { User } from './components/context/user'
+import { UserContextProvider } from './components/context/usercontext'
 import { Greet } from './components/greet'
 import { Heading } from './components/heading'
 import { Input } from './components/input'
@@ -55,6 +57,9 @@ function App() {
       <ThemeContextProvider>
         <Box />
       </ThemeContextProvider>
+      <UserContextProvider>
+        <User />
+      </UserContextProvider>
     </div>
   )
 }
