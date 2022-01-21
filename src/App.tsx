@@ -13,6 +13,7 @@ import { UserContextProvider } from './components/context/usercontext'
 import { List } from './components/generics/list'
 import { Greet } from './components/greet'
 import { Heading } from './components/heading'
+import { CustomButton } from './components/html/button'
 import { Input } from './components/input'
 import { Person } from './components/person'
 import { PersonList } from './components/personlist'
@@ -96,6 +97,9 @@ function App() {
       />
       <RandomNumber value={5} isPositive />
       <Toast position="center" />
+      <CustomButton variant="primary" onClick={() => console.log('Clicked')}>
+        Primary Button
+      </CustomButton>
     </div>
   )
 }
