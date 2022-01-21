@@ -18,6 +18,7 @@ import { Person } from './components/person'
 import { PersonList } from './components/personlist'
 import { DomRef } from './components/ref/domref'
 import { MutableRef } from './components/ref/mutableref'
+import { RandomNumber } from './components/restriction/randomnumber'
 import { Counter } from './components/state/counter'
 import { Status } from './components/status'
 
@@ -92,6 +93,7 @@ function App() {
         ]}
         onClick={console.log}
       />
+      <RandomNumber value={5} isPositive />
     </div>
   )
 }
