@@ -21,6 +21,7 @@ import { MutableRef } from './components/ref/mutableref'
 import { RandomNumber } from './components/restriction/randomnumber'
 import { Counter } from './components/state/counter'
 import { Status } from './components/status'
+import { Toast } from './components/templateliterals/toast'
 
 function App() {
   const PersonName = {
@@ -94,6 +95,7 @@ function App() {
         onClick={console.log}
       />
       <RandomNumber value={5} isPositive />
+      <Toast position="center" />
     </div>
   )
 }
