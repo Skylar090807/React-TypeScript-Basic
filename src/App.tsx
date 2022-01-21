@@ -70,7 +70,28 @@ function App() {
       <MutableRef />
       <Counter2 message="The count value is" />
       <Private isLoggedIn={true} Component={Profile} />
-      <List item={['cat', 'puppy', 'bird']} onClick={console.log} />
+      {/* <List item={['cat', 'puppy', 'bird']} onClick={console.log} />
+      <List item={[1, 2, 3]} onClick={console.log} /> */}
+      <List
+        items={[
+          {
+            id: 1,
+            first: 'Heady',
+            last: 'Lamarr',
+          },
+          {
+            id: 2,
+            first: 'Margaret',
+            last: 'Hamilton',
+          },
+          {
+            id: 3,
+            first: 'Grace',
+            last: 'Hopper',
+          },
+        ]}
+        onClick={console.log}
+      />
     </div>
   )
 }
