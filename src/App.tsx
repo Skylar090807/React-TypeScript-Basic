@@ -10,6 +10,7 @@ import { Box } from './components/context/box'
 import { ThemeContextProvider } from './components/context/themecontext'
 import { User } from './components/context/user'
 import { UserContextProvider } from './components/context/usercontext'
+import { List } from './components/generics/list'
 import { Greet } from './components/greet'
 import { Heading } from './components/heading'
 import { Input } from './components/input'
@@ -69,6 +70,7 @@ function App() {
       <MutableRef />
       <Counter2 message="The count value is" />
       <Private isLoggedIn={true} Component={Profile} />
+      <List item={['cat', 'puppy', 'bird']} onClick={console.log} />
     </div>
   )
 }
