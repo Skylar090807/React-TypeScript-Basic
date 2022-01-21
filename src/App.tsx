@@ -1,5 +1,7 @@
 import React from 'react'
 import './App.css'
+import { Private } from './components/auth/private'
+import { Profile } from './components/auth/profile'
 import { Award } from './components/award'
 import { Button } from './components/button'
 import { Counter2 } from './components/class/counter'
@@ -66,6 +68,7 @@ function App() {
       <DomRef />
       <MutableRef />
       <Counter2 message="The count value is" />
+      <Private isLoggedIn={true} Component={Profile} />
     </div>
   )
 }
